@@ -27,7 +27,7 @@ No mesmo programa é possível testar para 3 tipos de Autômatos Finitos:
         Exemplo da tabela de um DFA, assim como em [*ex_dfa.txt*](input/ex_dfa.txt):
         ```
               0	  1
-        \>*q0  q2  q1
+        >*q0  q2  q1
         q1    q3  q0
         q2    q3  q3
         q3    q1  q2
@@ -36,7 +36,7 @@ No mesmo programa é possível testar para 3 tipos de Autômatos Finitos:
         Exemplo da tabela de um NFA, assim como em [*ex_nfa.txt*](input/ex_nfa.txt):
         ```
               0         1
-        \>q0   {q0,q1}   {q0}
+        >q0   {q0,q1}   {q0}
         q1    {q2,q3}   {q4}
         q2    {q0,q2}   {q4}
         *q3   {}        {}
@@ -46,7 +46,7 @@ No mesmo programa é possível testar para 3 tipos de Autômatos Finitos:
         Exemplo de tabela de um e-NFA, assim como em [*ex_e-nfa.txt*](input/ex_e-nfa.txt):
         ```
               a       b       &
-        \>q0   {}      {}      {q1}
+        >q0   {}      {}      {q1}
         q1    {}      {}      {q2,q4}
         q2    {q3}    {}      {}
         q3    {}      {}      {q6}
