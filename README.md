@@ -81,3 +81,8 @@ No mesmo programa é possível testar para 3 tipos de Autômatos Finitos:
   1. No seu terminal favorito, digite `python main.py` (em alguns casos é necessário especificar a versão do Python, como `python3 main.py`).
   2. Logo após será pedido para digitar o nome do arquivo onde está a tabela de transições, como por exemplo: `ex_dfa.txt` ou somente `ex_dfa`.
   3. Logo após será pedido para digitar o nome do arquivo onde estão as palavras a serem testadas, como por exemplo: `ex_strings.txt` ou somente `ex_strings`.
+
+## Saída de arquivos
+  As saídas serão armazenas em um arquivo `nome_do_automato_output.txt` dentro da pasta [*output*](output/), onde `nome_do_automato` é o mesmo nome do arquivo da tabela de transições.
+  
+  O arquivo será composto pelas palavras passadas anteriormente que foram testadas e, caso aprovados, estará escrito `Aprovado` no começo, e caso não, estará escrito `Rejeitado` no começo, assim como em [*ex_output.txt*](output/ex_output.txt).
