@@ -89,7 +89,7 @@ class automaton:
         
         return states + alphabet + transitions + initial + final
 
-def readautomaton(filename):
+def readAutomaton(filename):
     states      = list(str())
     alphabet    = list(str())
     transitions = dict()
@@ -115,12 +115,6 @@ def readautomaton(filename):
             for symbol, state in zip(alphabet, currentTranstions):
                 if state != '{}':
                     transitions[(line.split()[0], symbol)] = {transition for transition in state.replace('{', '').replace('}', '').split(',')}
-
-    for state in states:
-        if state.startswith('>'):
-            initial = state
-        if state.startswith('*'):
-            final += [state]
 
     return automaton(states, alphabet, transitions, initial, final)
 

@@ -12,7 +12,7 @@ def main():
             if not transitionsFile.endswith('.txt'):
                 transitionsFile += '.txt'
             
-            automaton = readautomaton('./input/' + transitionsFile)
+            automaton = readAutomaton('./input/' + transitionsFile)
         except FileNotFoundError:
             print('Arquivo ' + transitionsFile + ' não encontrado!\n')
     
